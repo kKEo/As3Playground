@@ -1,0 +1,43 @@
+// @see: http://gradlefx.org/
+// @see: https://github.com/GradleFx/GradleFx/wiki/Properties-conventions
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'org.gradlefx', name: 'gradlefx', version: '0.+'
+    }
+}
+allprojects {
+    defaultTasks 'clean','compile'
+}
+
+subprojects {
+
+    apply plugin: 'gradlefx'
+
+    version = '1.0-SNAPSHOT'
+    
+    srcDirs = [
+        'src',
+        'assets',
+        'system',
+    ]
+    
+    frameworkLinkage = 'merged'
+    
+    playerVersion = '14.0'
+
+    additionalCompilerOptions = [
+        '-debug=true',
+        '-optimize=true',
+        '-target-player=14.0',
+        '-swf-version=25'
+    ]
+
+    dependencies {
+        merged files("../lib/starling.swc")
+    }
+    
+}
