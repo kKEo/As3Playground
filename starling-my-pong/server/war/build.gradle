@@ -1,0 +1,17 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+//war {
+//	dependsOn: ':app:swf:compileFlex'
+//	from(project(':app:swf').compileFlex)
+//}
+
+jettyRun {
+	httpPort=8000
+}
+
+dependencies {
+	compile project(':server:dto')
+}
+
+

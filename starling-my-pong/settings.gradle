@@ -1,0 +1,4 @@
+include 'server',
+           'server:war', 'server:dto',
+        'app',
+           'app.model', 'app.ui'

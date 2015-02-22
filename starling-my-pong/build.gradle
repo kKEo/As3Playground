@@ -1,0 +1,4 @@
+allprojects {
+	group = 'org.maziarz.smypong'
+	version = '0.1-SNAPSHOT'
+}
