@@ -1,6 +1,7 @@
 // @see: http://gradlefx.org/
 // @see: https://github.com/GradleFx/GradleFx/wiki/Properties-conventions
 
+
 buildscript {
     repositories {
         mavenCentral()
@@ -9,14 +10,15 @@ buildscript {
         classpath group: 'org.gradlefx', name: 'gradlefx', version: '0.+'
     }
 }
-allprojects {
-    defaultTasks 'clean','compile'
-}
 
-subprojects {
+allprojects {
+    defaultTasks 'clean', 'compile', 'createHtmlWrapper'
+}
 
     apply plugin: 'gradlefx'
 
+    type = 'swf'
+    mainClass = 'Demo_Web.as'
     version = '1.0-SNAPSHOT'
     
     srcDirs = [
@@ -37,7 +39,6 @@ subprojects {
     ]
 
     dependencies {
-        merged files("../lib/starling.swc")
+        merged files("lib/starling.swc")
     }
     
-}
