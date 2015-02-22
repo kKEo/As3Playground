@@ -1,5 +1,9 @@
 type='swf'
+mainClass='org/maziarz/Startup.as'
+
+frameworkLinkage = 'merged'
 
 dependencies {
 	merged project(':app:model')
+	merged files("lib/starling.swc")
 }

@@ -1,4 +1,6 @@
 allprojects {
 	group = 'org.maziarz.smypong'
 	version = '0.1-SNAPSHOT'
+
+	defaultTasks 'clean', 'build'
 }

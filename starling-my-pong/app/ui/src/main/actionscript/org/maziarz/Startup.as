@@ -1,3 +1,4 @@
+package org.maziarz {
 import flash.display.Sprite;
 import starling.core.Starling;
 
@@ -11,4 +12,5 @@ public class Startup extends Sprite
         _starling = new Starling(Game, stage);
         _starling.start();
     }
+}
 }
