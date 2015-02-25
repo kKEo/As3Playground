@@ -1,0 +1,97 @@
+{
+   "towers": [
+      {
+         "id": "tower1",
+         "index": 0,
+         "name": "Blue Tower",
+         "klass": "Tower1",
+         "imageName": "towers/tower1_001",
+         "bulletImageName": "bullets/sparkle_blue_001",
+         "bulletSpeed": 12,
+         "bulletWidth": 32,
+         "bulletHeight": 32,
+         "towerWidth": 20,
+         "towerHeight": 20,
+         "maxLevel": 3,
+         "sounds": [
+		    { 
+               "state": "onFire",
+               "soundId": "shot1"
+            }
+         ],
+         "levelData": [
+            {
+               "level": 1,
+               "range": 75,
+               "damage": 5,
+               "speed": 1500,
+               "dps": 3.33,
+               "cost": 10
+            },
+            {
+               "level": 2,
+               "range": 150,
+               "damage": 10,
+               "speed": 1250,
+               "dps": 8,
+               "cost": 30
+            },
+            {
+               "level": 3,
+               "range": 200,
+               "damage": 20,
+               "speed": 900,
+               "dps": 22.22,
+               "cost": 50
+            }
+         ]
+      },
+      {
+
+         "id": "tower2",
+         "index": 1,
+         "name": "Red Tower",
+         "klass": "Tower1",
+         "imageName": "towers/tower2_001",
+         "bulletImageName": "bullets/sparkle1",
+         "bulletSpeed": 12,
+         "bulletWidth": 32,
+         "bulletHeight": 32,
+         "towerWidth": 20,
+         "towerHeight": 20,
+         "maxLevel": 3,
+         "sounds": [
+            { 
+               "state": "onFire",
+               "soundId": "shot2"
+            }
+         ],
+         "levelData": [
+            {
+               "level": 1,
+               "range": 110,
+               "damage": 2,
+               "speed": 1000,
+               "dps": 2,
+               "cost": 3
+            },
+            {
+               "level": 2,
+               "range": 170,
+               "damage": 4,
+               "speed": 750,
+               "dps": 5.33,
+               "cost": 15
+            },
+            {
+               "level": 3,
+               "range": 300,
+               "damage": 8,
+               "speed": 500,
+               "dps": 16,
+               "cost": 30
+            }
+         ]
+      }
+   ]
+}

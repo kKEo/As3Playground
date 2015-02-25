@@ -1,0 +1,24 @@
+{
+   "files": [
+      {
+         "id": "ding1",
+         "file": "assets/sounds/ding1.mp3"
+      },
+      {
+         "id": "escape1",
+         "file": "assets/sounds/escape1.mp3"
+      },
+      {
+         "id": "shot1",
+         "file": "assets/sounds/shot1.mp3"
+      },
+      {
+         "id": "shot2",
+         "file": "assets/sounds/shot2.mp3"
+      },
+      {
+         "id": "banish1",
+         "file": "assets/sounds/banish1.mp3"
+      }
+   ]
+}

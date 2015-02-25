@@ -1,0 +1,149 @@
+{
+   "files": [
+      {
+         "id": "logo",
+         "convertToTexture": true,
+         "file": "assets/images/logo.png"
+      },
+	  {
+         "id": "atlas",
+         "file": "assets/images/atlas.png"
+      },
+      {
+         "id": "atlasXML",
+         "file": "assets/images/atlas.xml"
+      },
+      {
+         "id": "bkgd",
+         "convertToTexture": true,
+         "file": "assets/images/bkgd/bkgd.jpg"
+      },
+      {
+         "id": "gameStateBkgd",
+         "convertToTexture": true,
+         "file": "assets/images/bkgd/gameStateBkgd.jpg"
+      },
+      {
+         "id": "playBkgd",
+         "convertToTexture": true,
+         "file": "assets/images/bkgd/playBkgd.png"
+      },
+      {
+         "id": "gameOptionsBkgd",
+         "convertToTexture": true,
+         "file": "assets/images/bkgd/gameOptionsBkgd.jpg"
+      },
+      {
+         "id": "waveTileBkgd",
+         "convertToTexture": true,
+         "file": "assets/images/bkgd/waveTileBkgd.jpg"
+      },
+      {
+         "id": "playGameBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/playGameBtn.jpg"
+      },
+      {
+         "id": "deleteGameBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/deleteGameBtn.png"
+      },
+      {
+         "id": "newGameBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/newGameBtn.jpg"
+      },
+      {
+         "id": "upgradesBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/upgradesBtn.jpg"
+      },
+      {
+         "id": "resetUpgradesBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/resetUpgradesBtn.jpg"
+      },
+      {
+         "id": "loadGameBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/loadGameBtn.jpg"
+      },
+      {
+         "id": "mapSelectBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/mapSelectBtn.jpg"
+      },
+      {
+         "id": "playMapBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/playMapBtn.jpg"
+      },
+      {
+         "id": "tryAgainBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/tryAgainBtn.jpg"
+      },
+      {
+         "id": "pauseBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/pauseBtn_pause.jpg"
+      },
+      {
+         "id": "playBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/pauseBtn_play.jpg"
+      },
+      {
+         "id": "optsBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/optsBtn.jpg"
+      },
+      {
+         "id": "optsCancelBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/optsCancelBtn.jpg"
+      },
+      {
+         "id": "optsQuitBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/optsQuitBtn.jpg"
+      },
+      {
+         "id": "optsSaveBtn",
+         "convertToTexture": true,
+         "file": "assets/images/buttons/optsSaveBtn.jpg"
+      },
+      {
+         "id": "calistoMT",
+         "file": "assets/images/fonts/calistomt.png"
+      },
+      {
+         "id": "calistoMTXML",
+         "file": "assets/images/fonts/calistomt.fnt"
+      },
+      {
+         "id": "wizztaB",
+         "file": "assets/images/fonts/wizzta.png"
+      },
+      {
+         "id": "wizztaXML",
+         "file": "assets/images/fonts/wizzta.fnt"
+      },
+      {
+         "id": "sparkle1PEX",
+         "file": "assets/images/particles/sparkle1.pex"
+      },
+      {
+         "id": "enemyDiePEX",
+         "file": "assets/images/particles/enemyDie.pex"
+      },
+      {
+         "id": "mapSelectJSON",
+         "file": "assets/json/maps/mapSelectData.json"
+      },
+      {
+         "id": "towerDataJSON",
+         "file": "assets/json/towers/towerData.json"
+      }
+   ]
+}

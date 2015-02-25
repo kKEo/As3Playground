@@ -1,0 +1,901 @@
+{
+   "mapName": "First Map!",
+   "numRows": 22,
+   "numCols": 22,
+   "numLayers": 1,
+   "bkgdSrc": "misc/grass1_001",
+   "drawBkgd": 1,
+   "tileWidth": 24,
+   "tileHeight": 24,
+   "startHP": 10,
+   "startGold": 20,
+   "enemyWaveData": 
+      {
+         "numWaves": 10,
+         "waveTiles": 
+            [
+               {
+                  "id": "wave1",
+                  "image": "waveTile1",
+                  "title": "Wave 1",
+                  "desc": "Regular enemies on wave 1!"
+               },
+               {
+                  "id": "wave2",
+                  "image": "waveTile2",
+                  "title": "Wave 2",
+                  "desc": "Regular enemies on wave 2!"
+               },
+               {
+                  "id": "wave3",
+                  "image": "waveTile3",
+                  "title": "Wave 3",
+                  "desc": "Regular enemies on wave 3!"
+               },
+               {
+                  "id": "wave4",
+                  "image": "waveTile4",
+                  "title": "Wave 4",
+                  "desc": "Regular enemies on wave 4!"
+               },
+               {
+                  "id": "wave5",
+                  "image": "waveTile5",
+                  "title": "Wave 5",
+                  "desc": "Regular enemies on wave 5!"
+               },
+               {
+                  "id": "wave6",
+                  "image": "waveTile1",
+                  "title": "Wave 6",
+                  "desc": "Regular enemies on wave 6!"
+               },
+               {
+                  "id": "wave7",
+                  "image": "waveTile2",
+                  "title": "Wave 7",
+                  "desc": "Regular enemies on wave 7!"
+               },
+               {
+                  "id": "wave8",
+                  "image": "waveTile3",
+                  "title": "Wave 8",
+                  "desc": "Regular enemies on wave 8!"
+               },
+               {
+                  "id": "wave9",
+                  "image": "waveTile4",
+                  "title": "Wave 9",
+                  "desc": "Regular enemies on wave 9!"
+               },
+               {
+                  "id": "wave10",
+                  "image": "waveTile5",
+                  "title": "Wave 10",
+                  "desc": "Regular enemies on wave 10!"
+               }
+            ]
+      },
+      "enemyData": 
+         {
+            "enemyTypes": 
+               [
+                  {
+                     "id": "enemyA",
+                     "name": "Enemy A",
+                     "klass": "EnemyA",
+                     "sounds": [
+		                { 
+                           "state": "onEscape",
+                           "soundId": "escape1"
+                        },
+                        { 
+                           "state": "onBanish",
+                           "soundId": "banish1"
+                        }
+                     ]
+                  },
+                  {
+                     "id": "enemyB",
+                     "name": "Enemy B",
+                     "klass": "EnemyB",
+                     "sounds": [
+						{ 
+                           "state": "onEscape",
+                           "soundId": "escape1"
+                        },
+                        { 
+                           "state": "onBanish",
+                           "soundId": "banish1"
+                        }
+                     ]
+                  }
+            ],
+            "enemyWaves": [
+               {
+                  "id": "wave1",
+                  "groups": "group1"
+               },
+               {
+                  "id": "wave2",
+                  "groups": "group2"
+               },
+               {
+                  "id": "wave3",
+                  "groups": "group3"
+               },
+               {
+                  "id": "wave4",
+                  "groups": "group4"
+               },
+               {
+                  "id": "wave5",
+                  "groups": "group5"
+               },
+               {
+                  "id": "wave6",
+                  "groups": "group6"
+               },
+               {
+                  "id": "wave7",
+                  "groups": "group7"
+               },
+               {
+                  "id": "wave8",
+                  "groups": "group8"
+               },
+               {
+                  "id": "wave9",
+                  "groups": "group9"
+               },
+               {
+                  "id": "wave10",
+                  "groups": "group10"
+               }
+            ],
+               "enemyGroups": [
+                  {
+                     "id": "group1",
+                     "name": "Group 1",
+                     "spawnDelay": "800",
+                     "wave": "wave1",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group2",
+                     "name": "Group 2",
+                     "spawnDelay": "800",
+                     "wave": "wave2",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group3",
+                     "name": "Group 3",
+                     "spawnDelay": "500",
+                     "wave": "wave3",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group4",
+                     "name": "Group 4",
+                     "spawnDelay": "1500",
+                     "wave": "wave4",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group5",
+                     "name": "Group 5",
+                     "spawnDelay": "1000",
+                     "wave": "wave5",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group6",
+                     "name": "Group 6",
+                     "spawnDelay": "2000",
+                     "wave": "wave6",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group7",
+                     "name": "Group 7",
+                     "spawnDelay": "500",
+                     "wave": "wave7",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }   
+                     ]
+                  },
+                  {
+                     "id": "group8",
+                     "name": "Group 8",
+                     "spawnDelay": "1000",
+                     "wave": "wave8",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 } 
+                     ]
+                  },
+                  {
+                     "id": "group9",
+                     "name": "Group 9",
+                     "spawnDelay": "1000",
+                     "wave": "wave9",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }  
+                     ]
+                  },
+                  {
+                     "id": "group10",
+                     "name": "Group 10",
+                     "spawnDelay": "800",
+                     "wave": "wave10",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }    
+                     ]
+                  }
+              ]
+         },
+         "tiles": [
+            {
+               "layer": [
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        { "src": "roads/road1_102", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 1, "sp": 1, "spDirection": "left"},
+                        { "src": "roads/road1_101", "isWalkable": 1, "groupStartIcon": "l" },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_301", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 2 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_602", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 5 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_301", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 6 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_502", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 3 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_402", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 4 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_502", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 7 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 8, "ep": 1, "epDirection": "right" }
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  }
+            ]
+         }
+      ]
+}

@@ -1,0 +1,16 @@
+{
+   "maps": [
+      {
+         "id": "map1",
+         "file": "assets/maps/map1.json",
+         "title": "First Map!",
+         "desc": "This first map is easy!"
+      },
+      {
+         "id": "map2",
+         "file": "assets/maps/map2.json",
+         "title": "Second Map!",
+         "desc": "This second map is also easy!"
+      }
+   ]
+}

@@ -1,0 +1,1101 @@
+{
+   "mapName": "Second Map!",
+   "numRows": 22,
+   "numCols": 22,
+   "numLayers": 1,
+   "bkgdSrc": "misc/grass1_001",
+   "drawBkgd": 1,
+   "tileWidth": 24,
+   "tileHeight": 24,
+   "startHP": 10,
+   "startGold": 15,
+   "enemyWaveData": 
+      {
+         "numWaves": 10,
+         "waveTiles": 
+            [
+               {
+                  "id": "wave1",
+                  "image": "waveTile1",
+                  "title": "Wave 1",
+                  "desc": "Regular enemies on wave 1!"
+               },
+               {
+                  "id": "wave2",
+                  "image": "waveTile2",
+                  "title": "Wave 2",
+                  "desc": "Regular enemies on wave 2!"
+               },
+               {
+                  "id": "wave3",
+                  "image": "waveTile3",
+                  "title": "Wave 3",
+                  "desc": "Regular enemies on wave 3!"
+               },
+               {
+                  "id": "wave4",
+                  "image": "waveTile4",
+                  "title": "Wave 4",
+                  "desc": "Regular enemies on wave 4!"
+               },
+               {
+                  "id": "wave5",
+                  "image": "waveTile5",
+                  "title": "Wave 5",
+                  "desc": "Regular enemies on wave 5!"
+               },
+               {
+                  "id": "wave6",
+                  "image": "waveTile1",
+                  "title": "Wave 6",
+                  "desc": "Regular enemies on wave 6!"
+               },
+               {
+                  "id": "wave7",
+                  "image": "waveTile2",
+                  "title": "Wave 7",
+                  "desc": "Regular enemies on wave 7!"
+               },
+               {
+                  "id": "wave8",
+                  "image": "waveTile3",
+                  "title": "Wave 8",
+                  "desc": "Regular enemies on wave 8!"
+               },
+               {
+                  "id": "wave9",
+                  "image": "waveTile4",
+                  "title": "Wave 9",
+                  "desc": "Regular enemies on wave 9!"
+               },
+               {
+                  "id": "wave10",
+                  "image": "waveTile5",
+                  "title": "Wave 10",
+                  "desc": "Regular enemies on wave 10!"
+               }
+            ]
+      },
+      "enemyData": 
+         {
+            "enemyTypes": 
+               [
+                  {
+                     "id": "enemyA",
+                     "name": "Enemy A",
+                     "klass": "EnemyA",
+                     "sounds": [
+		                { 
+                           "state": "onEscape",
+                           "soundId": "escape1"
+                        },
+                        { 
+                           "state": "onBanish",
+                           "soundId": "banish1"
+                        }
+                     ]
+                  },
+                  {
+                     "id": "enemyB",
+                     "name": "Enemy B",
+                     "klass": "EnemyB",
+                     "sounds": [
+						{ 
+                           "state": "onEscape",
+                           "soundId": "escape1"
+                        },
+                        { 
+                           "state": "onBanish",
+                           "soundId": "banish1"
+                        }
+                     ]
+                  }
+               ],
+               "enemyWaves": [
+                  {
+                     "id": "wave1",
+                     "groups": "group1a,group1b"
+                  },
+                  {
+                     "id": "wave2",
+                     "groups": "group2a,group2b"
+                  },
+                  {
+                     "id": "wave3",
+                     "groups": "group3a,group3b"
+                  },
+                  {
+                     "id": "wave4",
+                     "groups": "group4a,group4b"
+                  },
+                  {
+                     "id": "wave5",
+                     "groups": "group5a,group5b"
+                  },
+                  {
+                     "id": "wave6",
+                     "groups": "group6a,group6b"
+                  },
+                  {
+                     "id": "wave7",
+                     "groups": "group7a,group7b"
+                  },
+                  {
+                     "id": "wave8",
+                     "groups": "group8a,group8b"
+                  },
+                  {
+                     "id": "wave9",
+                     "groups": "group9a,group9b"
+                  },
+                  {
+                     "id": "wave10",
+                     "groups": "group10a,group10b"
+                  }
+               ],
+               "enemyGroups": [
+                  {
+                     "id": "group1a",
+                     "name": "Group 1a",
+                     "spawnDelay": "800",
+                     "wave": "wave1",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group1b",
+                     "name": "Group 1b",
+                     "spawnDelay": "1200",
+                     "wave": "wave1",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group2a",
+                     "name": "Group 2a",
+                     "spawnDelay": "800",
+                     "wave": "wave2",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group2b",
+                     "name": "Group 2b",
+                     "spawnDelay": "500",
+                     "wave": "wave2",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group3a",
+                     "name": "Group 3a",
+                     "spawnDelay": "500",
+                     "wave": "wave3",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group3b",
+                     "name": "Group 3b",
+                     "spawnDelay": "2500",
+                     "wave": "wave3",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group4a",
+                     "name": "Group 4a",
+                     "spawnDelay": "1500",
+                     "wave": "wave4",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group4b",
+                     "name": "Group 4b",
+                     "spawnDelay": "1500",
+                     "wave": "wave4",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group5a",
+                     "name": "Group 5a",
+                     "spawnDelay": "1000",
+                     "wave": "wave5",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group5b",
+                     "name": "Group 5b",
+                     "spawnDelay": "1000",
+                     "wave": "wave5",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group6a",
+                     "name": "Group 6a",
+                     "spawnDelay": "2000",
+                     "wave": "wave6",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group6b",
+                     "name": "Group 6b",
+                     "spawnDelay": "2000",
+                     "wave": "wave6",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }
+                     ]
+                  },
+                  {
+                     "id": "group7a",
+                     "name": "Group 7a",
+                     "spawnDelay": "500",
+                     "wave": "wave7",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }   
+                     ]
+                  },
+                  {
+                     "id": "group7b",
+                     "name": "Group 7b",
+                     "spawnDelay": "500",
+                     "wave": "wave7",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 }   
+                     ]
+                  },
+                  {
+                     "id": "group8a",
+                     "name": "Group 8a",
+                     "spawnDelay": "1500",
+                     "wave": "wave8",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 } 
+                     ]
+                  },
+                  {
+                     "id": "group8b",
+                     "name": "Group 8b",
+                     "spawnDelay": "1500",
+                     "wave": "wave8",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 } 
+                     ]
+                  },
+                  {
+                     "id": "group9a",
+                     "name": "Group 9a",
+                     "spawnDelay": "1000",
+                     "wave": "wave9",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }    
+                     ]
+                  },
+                  {
+                     "id": "group9b",
+                     "name": "Group 9b",
+                     "spawnDelay": "1000",
+                     "wave": "wave9",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }    
+                     ]
+                  },
+                  {
+                     "id": "group10a",
+                     "name": "Group 10a",
+                     "spawnDelay": "1500",
+                     "wave": "wave10",
+                     "waypointGroup": "wpGroup1",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }    
+                     ]
+                  },
+                  {
+                     "id": "group10b",
+                     "name": "Group 10b",
+                     "spawnDelay": "1500",
+                     "wave": "wave10",
+                     "waypointGroup": "wpGroup2",
+                     "enemies": [
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyA", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 },
+                        { "typeId": "enemyB", "level": 1 }    
+                     ]
+                  }
+              ]
+         },
+         "tiles": [
+            {
+               "layer": [
+                  {
+                     "row": [
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 1, "sp": 1, "spDirection": "up" },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1, "groupStartIcon": "t" },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        { "src": "roads/road1_503", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 2 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_302", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 3 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        { "src": "roads/road1_602", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 5 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_401", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 4 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        { "src": "roads/road1_502", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 6 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_301", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 7 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_601", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup2", "wpIndex": 5 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_303", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup2", "wpIndex": 6 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        { "src": "roads/road1_102", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup2", "wpIndex": 1, "sp": 1, "spDirection": "left" },
+                        { "src": "roads/road1_103", "isWalkable": 1, "groupStartIcon": "l" },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_303", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup2", "wpIndex": 2 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1 },
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_202", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_502", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup2", "wpIndex": 3 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_401", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup2", "wpIndex": 4 },
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_501", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup2", "wpIndex": 7 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1 },
+                        { "src": "roads/road1_101", "isWalkable": 1 },
+                        { "src": "roads/road1_702", "isWalkable": 1 },
+                        { "src": "roads/road1_103", "isWalkable": 1 },
+                        { "src": "roads/road1_102", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup2", "wpIndex": 8, "ep": 1, "epDirection": "right" }
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_203", "isWalkable": 1 },
+                        {},
+                        {}
+                     ]
+                  },
+                  {
+                     "row": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        { "src": "roads/road1_201", "isWalkable": 1, "wp": 1, "wpGroup": "wpGroup1", "wpIndex": 8, "ep": 1, "epDirection": "down" },
+                        {},
+                        {}
+                     ]
+                  }
+            ]
+         }
+      ]
+}
