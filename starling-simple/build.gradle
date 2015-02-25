@@ -1,0 +1,25 @@
+buildscript {
+	repositories {
+		mavenLocal()
+		mavenCentral()
+	}
+dependencies {
+	classpath group: 'org.gradlefx', name: 'gradlefx', version: '1.1'
+	}
+}
+
+group = 'org.maziarz'
+version = '0.1-SNAPSHOT'
+
+apply plugin: 'gradlefx'
+
+defaultTasks 'clean', 'build'
+
+type='swf'
+mainClass='org/maziarz/Startup.as'
+
+frameworkLinkage = 'merged'
+
+dependencies {
+	merged files("lib/starling.swc")
+}
